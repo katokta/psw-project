@@ -125,8 +125,7 @@
 <hr class="new1">
 	
   <!-- Page Heading -->
-  <h1 class="my-4 border-atas" style="text-align: center">BERITA TERBARU
-  </h1>
+  <h1 class="my-4 border-atas">BERITA TERBARU</h1>
   <p class="general-heading_line"></p>
   <div class="row">
     <div class="col-lg-4 col-sm-6 mb-4">
@@ -223,34 +222,77 @@
   </ul>
  <hr class="new1">
 </div>
-<!-- Control buttons -->
-<div id="myBtnContainer" class="container">
-    <h1 class="my-4 border-atas">GALLERY</h1>
-    <p class="general-heading_line"></p> 
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('bts')"> BTS</button>
-  <button class="btn" onclick="filterSelection('winner')"> Animals</button>
-  <button class="btn" onclick="filterSelection('ikon')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('seventeen')"> Colors</button>
-</div>
 
-<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="vid-main-wrapper clearfix">
+  <h1 class="my-4 border-atas">PLAYLIST</h1>
+  <p class="general-heading_line"></p>
+  		    <!-- THE YOUTUBE PLAYER -->
+      <div class="vid-container">
+          <iframe id="vid_frame" src="https://www.youtube.com/embed/CyzEtbG-sxY" frameborder="0" width="560" height="315"></iframe>
+      </div>
+
+      <!-- THE PLAYLIST -->
+      <div class="vid-list-container">
+            <ol id="vid-list">
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/CyzEtbG-sxY'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/vi/CyzEtbG-sxY/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLB2p5QvBLwczk2FDDiYrh2L2UtJ-w" /></span>
+                  <div class="desc">[M/V] SEVENTEEN(세븐틴) - 박수(CLAP)</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/jBBy2p5EQhs'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/vi/jBBy2p5EQhs/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLA6yOlkc3lgGeuiwGmvZhRUz-pfUQ" /></span>
+                  <div class="desc">WINNER - BABY BABY M/V</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/paFGJV0vFx4'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/an_webp/paFGJV0vFx4/mqdefault_6s.webp?du=3000&sqp=CIL0kO4F&rs=AOn4CLAUjJ7CIo6SRTp3SmZPt0byhCvSvQ" /></span>
+                  <div class="desc">[MV] Loco(로꼬) _ It's been a while(오랜만이야) (Feat. Zion.T)
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/JtjxZoa_LHM'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/vi/JtjxZoa_LHM/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLAwDQvAOiLWvyLrL4A2b91cr945fg" /></span>
+                  <div class="desc">블락비 (Block B) - Toy MV</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/wKyMIrBClYw'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/vi/wKyMIrBClYw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLCS3V0XY-11GeoPXiPr09YTgzGEvQ" /></span>
+                  <div class="desc">DEAN - instagram</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/ORzHsIWx8UQ'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/an_webp/ORzHsIWx8UQ/mqdefault_6s.webp?du=3000&sqp=CNCike4F&rs=AOn4CLDY0qZ2z9bgIH47LfmKXZ6ajBzAXg" /></span>
+                  <div class="desc">iKON - AIRPLANE M/V</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/eXBu09fwe3I'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/an_webp/eXBu09fwe3I/mqdefault_6s.webp?du=3000&sqp=CKyRke4F&rs=AOn4CLDcg2AKEzSqGl8kiJQI2f-pp978pg" /></span>
+                  <div class="desc">BTS (방탄소년단) 'Make It Right (feat. Lauv)' Official MV</div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://www.youtube.com/embed/nM0xDI5R50E'">
+                  <span class="vid-thumb"><img width=72 src="https://i.ytimg.com/an_webp/nM0xDI5R50E/mqdefault_6s.webp?du=3000&sqp=CNaxke4F&rs=AOn4CLCBOpdppYV-EMt-kBW3swwpDmcnTw" /></span>
+                  <div class="desc">[MV] IU(아이유) _ BBIBBI(삐삐)</div>
+                </a>
+              </li>
+              
+            </ul>
+       </div>
+</div>
 <div class="container">
-  <div class="filterDiv bts"><img src="yeezy.jpg"></div>
-  <div class="filterDiv winner"><img src="conve.jpg"</div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars animals">Mustang</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
+  <h1 class="my-4 border-atas">GALLERY</h1>
+       <p class="general-heading_line"></p>
+      </div>
+  	
 </div>
-
   <!--/ Section Blog End /-->
     <footer>
       <div class="container">

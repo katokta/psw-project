@@ -26,38 +26,96 @@ p.copyright{
 }
 
 
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none; /* Hidden by default */
+.vid-main-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  min-width: 440px;
+  margin: 0 auto;
 }
 
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
+
+/*  VIDEO PLAYER CONTAINER
+############################### */
+.vid-container {
+  position: relative;
+  padding-top: 30px; 
+  height: 0; 
+  width:70%;
+  float:left;
+  margin-bottom: 30%;
 }
 
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 360px;
 }
 
-/* Add a light grey background on mouse-over */
-.btn:hover {
-  background-color: #ddd;
+
+/*  VIDEOS PLAYLIST 
+############################### */
+.vid-list-container {
+width: 30%;
+height:360px;
+overflow: hidden;
+float:right;
 }
 
-/* Add a dark background to the active button */
-.btn.active {
-  background-color: #666;
-  color: white;
+.vid-list-container:hover, .vid-list-container:focus {
+ overflow-y: auto;
+}
+
+ol#vid-list {
+margin:0;
+padding:0;
+background: #222;
+}
+
+ol#vid-list li {
+list-style: none;
+}
+
+ol#vid-list li a {
+text-decoration: none;
+background-color: #222;
+height:55px;
+display:block;
+padding:10px;
+}
+
+ol#vid-list li a:hover {
+background-color:#666666
+}
+
+.vid-thumb {
+float:left;
+margin-right: 8px;
+}
+
+.active-vid { 
+background:#3A3A3A;
+}
+
+#vid-list .desc {
+color: #CACACA;
+font-size: 13px;
+margin-top:5px;
+}
+
+
+@media (max-width: 624px) {
+body {
+  margin: 15px;
+}
+.caption {
+  margin-top: 40px;
+}
+.vid-list-container {
+  padding-bottom: 20px;
+}
+
 }
